@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="strutsqs" extends="struts-default" namespace="/" >
+		<action name="GoLogin" class="com.action.GoLogin">
+			<result name="input">/Login.jsp</result>
+			<result name="success">/Index.jsp</result>
+		</action>
+		<action name="Quit" class="com.action.Quit">
+			<result name="success">/Login.jsp</result>
+		</action>
+		<action name="PasswordUpdateSave" class="com.action.PasswordUpdateSave">
+			<result name="input">/PasswordUpdate.jsp</result>
+		</action>
+		<action name="EmployeeManager" class="com.action.EmployeeManager">
+			<result name="success">/EmployeeManager.jsp</result>
+		</action>
+		<action name="EmployeeAddSave" class="com.action.EmployeeAddSave">			
+		</action>
+		<action name="EmployeeUpdate" class="com.action.EmployeeUpdate">
+			<result name="success">/EmployeeUpdate.jsp</result>
+		</action>
+		<action name="EmployeeUpdateSave" class="com.action.EmployeeUpdateSave">			
+		</action>
+		<action name="EmployeeDel" class="com.action.EmployeeDel">
+			<result name="success" type="chain">EmployeeManager</result>
+		</action>
+		<action name="DkeeperManager" class="com.action.DkeeperManager">
+			<result name="success">/DkeeperManager.jsp</result>
+		</action>
+		<action name="DkeeperAddSave" class="com.action.DkeeperAddSave">
+		</action>
+		<action name="DkeeperUpdate" class="com.action.DkeeperUpdate">
+		    <result name="success">/DkeeperUpdate.jsp</result>
+		</action>
+		<action name="DkeeperUpdateSave" class="com.action.DkeeperUpdateSave">
+		</action>
+		<action name="DkeeperDel" class="com.action.DkeeperDel">
+		  <result name="success" type="chain">DkeeperManager</result>
+		</action>
+		
+		<action name="StudentManager" class="com.action.StudentManager">
+			<result name="success">/StudentManager.jsp</result>
+		</action>
+		<action name="StudentAddSave" class="com.action.StudentAddSave">
+		</action>
+		<action name="StudentUpdate" class="com.action.StudentUpdate">
+		    <result name="success">/StudentUpdate.jsp</result>
+		</action>
+		<action name="StudentUpdateSave" class="com.action.StudentUpdateSave">
+		</action>
+		<action name="StudentDel" class="com.action.StudentDel">
+		  <result name="success" type="chain">StudentManager</result>
+		</action>
+		
+		<action name="ApartmentManager" class="com.action.ApartmentManager">
+			<result name="success">/ApartmentManager.jsp</result>
+		</action>
+		<action name="ApartmentAddSave" class="com.action.ApartmentAddSave">
+		</action>
+		<action name="ApartmentUpdate" class="com.action.ApartmentUpdate">
+		    <result name="success">/ApartmentUpdate.jsp</result>
+		</action>
+		<action name="ApartmentUpdateSave" class="com.action.ApartmentUpdateSave">
+		</action>
+		<action name="ApartmentDel" class="com.action.ApartmentDel">
+		  <result name="success" type="chain">ApartmentManager</result>
+		</action>
+		
+		<action name="DormitoryAdd" class="com.action.DormitoryAdd">
+			<result name="success">/DormitoryAdd.jsp</result>
+		</action>
+		<action name="DormitoryManager" class="com.action.DormitoryManager">
+			<result name="success">/DormitoryManager.jsp</result>
+		</action>
+		<action name="DormitoryAddSave" class="com.action.DormitoryAddSave">
+		</action>
+		<action name="DormitoryUpdate" class="com.action.DormitoryUpdate">
+		    <result name="success">/DormitoryUpdate.jsp</result>
+		</action>
+		<action name="DormitoryUpdateSave" class="com.action.DormitoryUpdateSave">
+		</action>
+		<action name="DormitoryDel" class="com.action.DormitoryDel">
+		  <result name="success" type="chain">DormitoryManager</result>
+		</action>
+		
+		
+		
+		
+		
+		<action name="MyStudentManager" class="com.action.MyStudentManager">
+			<result name="success">/MyStudentManager.jsp</result>
+		</action>
+		<action name="MyDormitoryManager" class="com.action.MyDormitoryManager">
+			<result name="success">/MyDormitoryManager.jsp</result>
+		</action>
+		<!-- <action name="MyStudentList" class="com.action.MyStudentList">
+			<result name="success">/MyStudentList.jsp</result>
+		</action> -->
+		<action name="HitchAdd" class="com.action.HitchAdd">
+			<result name="success">/HitchAdd.jsp</result>
+		</action>
+		
+		<action name="HitchAddSave" class="com.action.HitchAddSave">
+		</action>
+		
+		<action name="OutAdd" class="com.action.OutAdd">
+			<result name="success">/OutAdd.jsp</result>
+		</action>
+		<action name="OutAddSave" class="com.action.OutAddSave">
+		</action>
+		
+		<action name="AdminOutCheck" class="com.action.AdminOutCheck">
+		</action>
+		<action name="AdminHitchCheck" class="com.action.AdminHitchCheck">
+		<result name="success">/AdminHitchCheck.jsp</result>
+		</action>
+		<action name="AdminHitchCheckSave" class="com.action.AdminHitchCheckSave">
+		</action>
+		
+		<action name="MyHitchManager" class="com.action.MyHitchManager">
+			<result name="success">/MyHitchManager.jsp</result>
+		</action>
+		<action name="MyOutManager" class="com.action.MyOutManager">
+			<result name="success">/MyOutManager.jsp</result>
+		</action>
+		
+		
+		
+	
+		<action name="AdminOutList" class="com.action.AdminOutList">
+			<result name="success">/AdminOutList.jsp</result>
+		</action>
+		<action name="AdminHitchList" class="com.action.AdminHitchList">
+			<result name="success">/AdminHitchList.jsp</result>
+		</action>
+		
+		
+		
+	</package>
+</struts>    
